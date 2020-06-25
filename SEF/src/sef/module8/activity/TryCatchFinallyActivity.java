@@ -15,8 +15,14 @@ void catchMeIfYouCan()
 	
 	for(int i=0;i<=10;i++)
 	{
-		System.out.println(arr[i]);
+		try{ 
+			System.out.println(arr[i]);
+		}
+		catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("Cannot print array's element which is out of bounds of the array");
+		}
 	}
+	
 	
 	
 	

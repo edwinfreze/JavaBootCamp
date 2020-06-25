@@ -4,9 +4,16 @@ public class ErrorSample {
 	
 	//This is an example of an error which cannot be handled programmatically 
 	public static void main(String arg[]){
-		infinity();
+		try{//infinity();
+		System.out.println(divide(0,0));
+		} catch(ArithmeticException e) {
+			System.out.println("Cannot divide by zero");
+		}
 	}
-	
+	public static int divide (int a, int b) {
+		
+		return a/b;
+	}
 	//Below method calls itself and
 	//it happens infinite times because there is no exit condition
 	//At one point in time, JVM would give up and show StackOverflowError
