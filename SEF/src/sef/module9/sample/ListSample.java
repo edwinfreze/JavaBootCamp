@@ -35,7 +35,9 @@ public class ListSample {
 
 	    
 	    //1 - Add 3 more elements to the list - A, B and C
-	    
+	    list.add("A");
+	    list.add("B");
+	    list.add("C");
 	    
 	    
 		//call a method which prints this list
@@ -47,7 +49,10 @@ public class ListSample {
 	{
 		//Iterator is an interface which provides a uniform way to access
 		//individual elements of a Collection
-		
+		Iterator i = l.iterator();
+		while(i.hasNext()) {
+			System.out.println(i.next());
+		}
 		//2 - Use Iterator to iterate over this list.
 			}
 }
